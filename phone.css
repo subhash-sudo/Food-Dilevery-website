@@ -1,0 +1,31 @@
+body{
+    background-color: red;
+}
+#home{
+    height: 350px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 14px;
+
+}
+#navbar ul li a{
+    padding: 0 7px;
+    font-size: 1rem;
+}
+#navbar{
+    flex-direction: column;
+}
+#service {
+    flex-direction: column;
+}
+#client{
+    flex-wrap: wrap;
+}
+.btn{
+    font-size: 13px;
+    pad: 4px;
+}

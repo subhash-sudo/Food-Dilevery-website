@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Dilivery website</title>
+    <link rel="stylesheet" media="screen and (max-width:1220px)" href="phone.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #logo img {
+        margin: 15px;
+        height: 3rem;
+      }
+      #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      #navbar ul {
+        display: flex;
+      }
+
+      #navbar li {
+        display: flex;
+      }
+      #navbar ul li a {
+        text-decoration: none;
+        padding: 1em;
+        font-size: 1.5rem;
+        color: white;
+      }
+      #navbar ul li a:hover {
+        color: black;
+      
+      }
+      #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+      }
+
+      #home::before {
+        content: "";
+        background: url(home.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 520px;
+        width: 100%;
+        z-index: -1;
+        opacity: 2;
+      }
+      #home {
+        color: white;
+        text-align: center;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 34px;
+        align-items: center;
+        justify-content: center;
+      }
+      .h-primary {
+        font-size: 2.8rem;
+        padding: 12px;
+      }
+      .btn {
+        font-size: 1.4rem;
+        background-color: rgb(28, 162, 55);
+        border: 2px solid white;
+        font-family: "Anek Tamil", sans-serif;
+        border-radius: 50px;
+        cursor: pointer;
+        margin: 44px;
+      }
+      .service-container h1 {
+        text-align: center;
+        background-color: gray;
+      }
+      #service {
+        display: flex;
+      }
+      #service .box img {
+        height: 300px;
+        margin: auto;
+        display: block;
+        padding: 1px;
+      }
+      #service .box p {
+        text-align: center;
+      }
+      #service.box {
+        border: 2px solid brown;
+        border-radius: 23px;
+        background-color: rgb(211, 222, 234);
+        margin: 8px;
+      }
+      .client{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+     
+      #client-itme{
+          padding: 40px;
+      }
+      .client img{
+          height: 100px;
+      }
+      #client-section::before{
+          content: "";
+          background: url(head.jpg);
+          z-index: -1;
+          opacity: 0.4;
+          height: 40%;
+          width: 100%;
+          position: absolute;
+
+      }
+      #contact::before{
+          content: "";
+          z-index: -1;
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         opacity: 0.7;
+         background: url(contact.jpg) no-repeat center center/cover;
+
+         
+
+      }
+      #contact{
+        position: relative;
+        padding: 4px;
+      }
+      
+      .center{
+          text-align: center;
+      }
+      .form-group{
+          padding: 4px;
+          font-size: 30px;
+          text-align: center;  
+      }
+      .form-group input{
+           height: 30px;
+           width:1000px;
+      }
+      .form-group textarea{
+           height: 300px;
+           width:1000px;
+      }
+      
+      
+      footer{
+          background-color: black;
+          color: white;
+          height: 60px;
+        
+      }
+      .btn:hover{
+        color: white;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="food_logo.webp" alt="mywebsite logo" />
+      </div>
+      <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#service"> Our Service</a></li>
+        <li class="item"><a href="#client-itme">Our Client</a></li>
+        <li class="item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <h1 class="h-primary">Wel Come to online meal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        doloremque magni odit architecto deserunt, corrupti dolores debitis
+        ullam sed placeat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. ullam sed
+        placeat.
+      </p>
+      <button class="btn">Order Now</button>
+    </section>
+    <section class="service-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="service">
+        <div class="box">
+          <img src="1.jpg" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            alias, quae, vel et perferendis quasi sint voluptate facilis
+            quibusdam voluptatibus, ipsa ut. Enim temporibus minima unde nostrum
+            in fugit nihil eveniet cum commodi a.
+          </p>
+        </div>
+        <div class="box">
+          <img src="2.jpg" alt="" />
+          <h2 class="h-secondary center">Food Catriong</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            alias, quae, vel et perferendis quasi sint voluptate facilis
+            quibusdam voluptatibus, ipsa ut. Enim temporibus minima unde nostrum
+            in fugit nihil eveniet cum commodi a.
+          </p>
+        </div>
+        <div class="box">
+          <img src="order.jpg" alt="" />
+          <h2 class="h-secondary center">Bulk Order</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            alias, quae, vel et perferendis quasi sint voluptate facilis
+            quibusdam voluptatibus, ipsa ut. Enim temporibus minima unde nostrum
+            in fugit nihil eveniet cum commodi a.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="client-section">
+      <h1 class="h-primary center">Our Client</h1>
+      <div class="client">
+        <div id="client-itme">
+          <img src="apple.png" alt="Oure client" />
+        </div>
+        <div id="client-itme">
+            <img src="micro.jpg" alt="Oure client" />
+          </div>
+          <div id="client-itme">
+            <img src="skype.png" alt="Oure client" />
+          </div>
+          <div id="client-itme">
+            <img src="hp.jpg" alt="Oure client" />
+          </div>   
+      </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name="name" id="Email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">phone:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter Your Phone ">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                   <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+        Copyring &copy;WWW.myonline all right resvrved!
+    </div>
+    </footer>
+  </body>
+</html>
